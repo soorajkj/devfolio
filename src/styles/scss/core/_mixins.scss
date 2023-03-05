@@ -1,0 +1,28 @@
+@use 'functions' as *;
+
+// mediaquery
+@mixin media(
+  $breakpoint-one,
+  $breakpoint-two: null,
+  $breakpoints: (sm: 640px, md: 768px, lg: 1024px, xl: 1280px)
+) {
+  $has-breakpoint-one: map-has-key($breakpoints, $breakpoint-one);
+  $has-breakpoint-two: map-has-key($breakpoints, $breakpoint-two);
+
+  @if $has-breakpoint-one or $has-breakpoint-two {
+    $breakpoint-one-value: map-get($breakpoints, $breakpoint-one);
+    $breakpoint-two-value: map-get($breakpoints, $breakpoint-two);
+
+    @if ($has-breakpoint-two) {
+      @media (min-width: rem($breakpoint-one-value)) and (max-width: rem($breakpoint-two-value)) {
+        @content;
+      }
+    } @else {
+      @media (min-width: rem($breakpoint-one-value)) {
+        @content;
+      }
+    }
+  } @else {
+    @warn 'one or both of your breakpoint doesn\'t exist';
+  }
+}
