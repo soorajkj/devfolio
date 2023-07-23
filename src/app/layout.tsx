@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import '@/styles/scss/styles.scss';
+import '@/styles/tailwind.css';
+import '@/styles/app.scss';
 
 export const metadata: Metadata = {};
 
-export default function AppLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>{children}</body>
