@@ -5,5 +5,9 @@ module.exports = {
   theme: {
     extend: {},
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+    purgeLayersByDefault: true,
+  },
   plugins: [],
 };
