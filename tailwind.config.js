@@ -2,7 +2,6 @@
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  plugins: [require('prettier-plugin-tailwindcss')],
   theme: {
     extend: {},
     fontFamily: {
@@ -10,4 +9,9 @@ module.exports = {
       'family-firac': 'var(--font-family-firac)',
     },
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+    purgeLayersByDefault: true,
+  },
+  plugins: [require('prettier-plugin-tailwindcss')],
 };
