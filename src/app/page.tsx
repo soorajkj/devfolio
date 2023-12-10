@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 export default function Page() {
-  return <div>Home</div>;
+  return <Fragment>Home</Fragment>;
 }

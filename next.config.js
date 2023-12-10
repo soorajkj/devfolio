@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const path = require('path');
+
 const nextConfig = {
   reactStrictMode: true,
   webpack: (config) => {
@@ -8,6 +10,9 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
     return config;
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src/styles/abstracts')],
   },
 };
 
