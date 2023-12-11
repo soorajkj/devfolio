@@ -1,0 +1,16 @@
+.df-projects {
+  &__grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+  .df-project {
+    width: calc(33.33% - 32px);
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+}

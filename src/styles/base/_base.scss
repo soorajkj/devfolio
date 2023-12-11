@@ -1,5 +1,4 @@
 @use 'functions' as function;
-@use 'mixins' as mixin;
 
 html {
   scroll-behavior: smooth;
@@ -20,6 +19,8 @@ body,
 .container {
   max-width: 1280px;
   width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 }

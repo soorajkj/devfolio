@@ -1,3 +1,7 @@
 export default function Header() {
-  return <header>Header</header>;
+  return (
+    <header className="df-header">
+      <div className="container">Header</div>
+    </header>
+  );
 }
