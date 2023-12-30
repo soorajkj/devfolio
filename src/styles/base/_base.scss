@@ -1,3 +1,4 @@
+@use 'variables' as variable;
 @use 'functions' as function;
 
 html {
@@ -17,7 +18,7 @@ body,
 }
 
 .container {
-  max-width: 1280px;
+  max-width: variable.$xl;
   width: 100%;
   padding-right: 16px;
   padding-left: 16px;

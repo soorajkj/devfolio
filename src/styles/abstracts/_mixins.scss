@@ -1,9 +1,15 @@
 @use 'functions' as function;
+@use 'variables' as variable;
 
 @mixin mediaquery(
   $breakpoint-one,
   $breakpoint-two: null,
-  $breakpoints: (sm: 640px, md: 768px, lg: 1024px, xl: 1280px)
+  $breakpoints: (
+    sm: variable.$sm,
+    md: variable.$md,
+    lg: variable.$lg,
+    xl: variable.$xl
+  )
 ) {
   $has-breakpoint-one: map-has-key($breakpoints, $breakpoint-one);
   $has-breakpoint-two: map-has-key($breakpoints, $breakpoint-two);
