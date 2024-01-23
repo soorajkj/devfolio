@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
+    "yarn": "please-use-npm",
     "npm": ">=10.3.0",
-    "node": ">=14.0.0",
-    "yarn": "please-use-yarn"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "dev": "next dev",
@@ -31,14 +31,18 @@
     "@types/node": "^18.14.6",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "autoprefixer": "^10.4.17",
     "eslint": "^8.35.0",
     "eslint-config-next": "^14.0.2",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
     "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4",
+    "postcss": "^8.4.33",
+    "prettier": "^2.8.2",
+    "prettier-plugin-tailwindcss": "^0.2.1",
     "sass": "^1.58.3",
+    "tailwindcss": "^3.4.1",
     "typescript": "^4.9.5"
   }
 }
