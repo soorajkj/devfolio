@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm": "please-use-yarn",
+    "npm": ">=10.3.0",
     "node": ">=14.0.0",
-    "yarn": ">=1.22.0"
+    "yarn": "please-use-yarn"
   },
   "scripts": {
     "dev": "next dev",
