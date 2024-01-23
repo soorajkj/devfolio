@@ -6,6 +6,8 @@ import '@styles/app.scss';
 export const metadata: Metadata = {};
 
 export default function Layout({ children }: LayoutProps) {
+  const _temp = null;
+
   return (
     <html lang="en">
       <body>{children}</body>
