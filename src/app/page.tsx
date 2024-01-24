@@ -1,5 +1,12 @@
-import { Fragment } from 'react';
+"use client";
+
+import { Fragment } from "react";
+import Journey from "@components/journey";
 
 export default function Page() {
-  return <Fragment></Fragment>;
+  return (
+    <Fragment>
+      <Journey />
+    </Fragment>
+  );
 }
