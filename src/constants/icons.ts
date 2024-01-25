@@ -1,5 +1,5 @@
-import College from "public/icons/college.svg";
+import Code from "public/icons/code.svg";
 
 export const icons = {
-  college: College,
+  code: Code,
 };

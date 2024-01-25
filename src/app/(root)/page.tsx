@@ -1,12 +1,10 @@
-"use client";
-
 import { Fragment } from "react";
-import Journey from "@components/journey";
+import Container from "@components/core/container";
 
 export default function Page() {
   return (
     <Fragment>
-      <Journey />
+      <Container></Container>
     </Fragment>
   );
 }
