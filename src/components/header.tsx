@@ -1,10 +1,10 @@
-import * as React from "react";
+import React from "react";
 import Container from "@components/core/container";
 
 export default function Header() {
   return (
     <header className="sticky top-0 h-auto w-full border-b border-transparent backdrop-blur-sm transition duration-200 ease-in-out">
-      <Container>header</Container>
+      <Container></Container>
     </header>
   );
 }

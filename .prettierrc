@@ -4,7 +4,7 @@
   "jsxSingleQuote": false,
   "tabWidth": 2,
   "trailingComma": "es5",
-  "endOfLine": "auto",
+  "endOfLine": "lf",
   "importOrder": [
     "<BUILTIN_MODULES>",
     "^(react/(.*)$)|^(react$)",

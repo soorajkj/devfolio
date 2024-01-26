@@ -1,10 +1,10 @@
-import { Fragment } from "react";
-import Container from "@components/core/container";
+import React, { Fragment } from "react";
+import Archives from "@components/archives";
 
 export default function Page() {
   return (
     <Fragment>
-      <Container></Container>
+      <Archives />
     </Fragment>
   );
 }

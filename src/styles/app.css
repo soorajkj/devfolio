@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  background: hsl(0deg 1.98% 2.36%);
-  color: rgba(252, 253, 255, 0.936);
-}

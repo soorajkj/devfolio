@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "yarn": "please-use-npm",
-    "npm": ">=10.3.0",
-    "node": ">=14.0.0"
+    "yarn": ">=1.22.21",
+    "node": ">=18.19.0"
   },
   "scripts": {
     "dev": "next dev",
@@ -25,7 +24,7 @@
     "next": "^14.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-vertical-timeline-component": "^3.6.0",
+    "react-parallax-tilt": "^1.7.201",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
