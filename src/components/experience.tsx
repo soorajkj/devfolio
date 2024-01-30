@@ -19,7 +19,7 @@ export default function Experience() {
                     <Icon icon={_i.icon} width={18} height={18} />
                   </div>
                   <div className="flex w-full flex-1 flex-col justify-center font-medium">
-                    <p className="font-medium text-white">
+                    <p className="font-medium">
                       {`${_i.start.toString()} - ${_i.end.toString()}`}
                     </p>
                   </div>

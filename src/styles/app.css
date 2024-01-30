@@ -12,6 +12,9 @@ body {
   background-color: rgb(91 99 211 / 1);
   color: rgb(255 255 255 / 1);
 }
+.df-separator {
+  background-color: rgb(114 125 161 / 0.1);
+}
 .df-header {
   background-color: rgb(11 12 20 / 0.5);
   border-color: rgb(114 125 161 / 0.1);
@@ -38,8 +41,8 @@ body {
   border-color: rgb(114 125 161 / 0.2);
 }
 .df-experience__icon {
-  background-color: rgb(11 12 20 / 1);
-  color: rgb(255 255 255 / 1);
+  background-color: rgb(23 24 36 / 0.8);
+  color: rgb(147 157 184 / 1);
   border-color: rgb(114 125 161 / 0.2);
 }
 .df-experience__org {

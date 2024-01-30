@@ -18,6 +18,7 @@
     "pre-commit": "lint-staged"
   },
   "dependencies": {
+    "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-visually-hidden": "^1.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
