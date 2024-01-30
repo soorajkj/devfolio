@@ -1,13 +1,4 @@
-import { icons } from "./icons";
-
-export interface Experience {
-  org: string;
-  location: string;
-  start: string | Date;
-  end: string | Date;
-  role: string;
-  icon: keyof typeof icons;
-}
+import { Experience } from "@types";
 
 export const _experience: Experience[] = [
   {
