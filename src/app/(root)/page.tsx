@@ -1,10 +1,14 @@
 import React, { Fragment } from "react";
-import Archives from "@components/archives";
+import Experience from "@components/experience";
+import Hero from "@components/hero";
+import Technologies from "@components/technologies";
 
 export default function Page() {
   return (
     <Fragment>
-      <Archives />
+      <Hero />
+      <Experience />
+      <Technologies />
     </Fragment>
   );
 }

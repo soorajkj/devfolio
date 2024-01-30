@@ -1,15 +1,23 @@
-import { Fira_Code as FiraCode, Inter } from "next/font/google";
+import { Bebas_Neue, Montserrat, Roboto_Mono } from "next/font/google";
 
-export const inter = Inter({
+export const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-family-inter",
   display: "swap",
   preload: true,
 });
 
-export const firac = FiraCode({
+export const robotoMono = Roboto_Mono({
   subsets: ["latin"],
-  variable: "--font-family-firac",
+  variable: "--font-family-roboto-mono",
+  display: "swap",
+  preload: true,
+});
+
+export const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-family-bebas-neue",
   display: "swap",
   preload: true,
 });
