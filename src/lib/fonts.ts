@@ -2,7 +2,7 @@ import { Bebas_Neue, Montserrat, Roboto_Mono } from "next/font/google";
 
 export const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-family-inter",
+  variable: "--font-family-montserrat",
   display: "swap",
   preload: true,
 });

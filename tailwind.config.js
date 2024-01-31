@@ -5,9 +5,13 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      "family-inter": "var(--font-family-inter)",
+      "family-montserrat": "var(--font-family-montserrat)",
       "family-roboto-mono": "var(--font-family-roboto-mono)",
       "family-bebas-neue": "var(--font-family-bebas-neue)",
+    },
+    future: {
+      hoverOnlyWhenSupported: true,
+      purgeLayersByDefault: true,
     },
   },
   plugins: [],

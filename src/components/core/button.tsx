@@ -45,7 +45,7 @@ export const ButtonStyles = cva(
     "rounded-lg",
     "px-6",
     "py-3.5",
-    "font-family-inter",
+    "font-family-montserrat",
     "text-base",
     "font-medium",
     "leading-none",
