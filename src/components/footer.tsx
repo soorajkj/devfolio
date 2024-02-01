@@ -1,32 +1,35 @@
 import React from "react";
-import Container from "@components/core/container";
+import Link from "@components/core/link";
 
 export default function Footer() {
   return (
-    <footer className="df-footer relative h-auto w-full border-t">
-      <Container>
+    <footer className="df-footer relative">
+      <div className="container">
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-between py-8 lg:flex-row lg:items-end">
-            <div>
-              <p className="max-w-96 font-family-roboto-mono text-sm leading-normal">
-                Designed in Figma and coded in Visual Studio Code. Built with
-                Next.js and Tailwind CSS, deployed with Vercel.
+            <div className="static">
+              <p className="max-w-96 text-center font-family-roboto-mono text-sm leading-normal lg:text-left">
+                Designed in <Link href={""}>Figma</Link> and coded in{" "}
+                <Link href={""}>Visual Studio Code</Link>. Built with{" "}
+                <Link href={""}>Next.js</Link> and{" "}
+                <Link href={""}>Tailwind CSS</Link>, deployed with{" "}
+                <Link href={""}>Vercel</Link>.
               </p>
             </div>
             <div className="flex items-center gap-6 whitespace-nowrap font-family-roboto-mono text-sm">
-              <a className="-mx-1 hidden px-1 lg:block" href="">
+              <Link className="-mx-1 hidden px-1 lg:block" href="">
                 +91-9946953968
-              </a>
-              <a className="-mx-1 hidden px-1 lg:block" href="">
+              </Link>
+              <Link className="-mx-1 hidden px-1 lg:block" href="">
                 soorajkj46@gmail.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between border-neutral-300/10 py-4 font-family-roboto-mono text-sm lg:flex-row lg:border-t">
-          <p>© {new Date().getFullYear()} codefolio.dev</p>
+        <div className="flex flex-col items-center justify-between py-4 font-family-roboto-mono text-sm lg:flex-row">
+          <p>© {new Date().getFullYear()} codefolio.inc</p>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 }

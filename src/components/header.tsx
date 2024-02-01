@@ -1,15 +1,16 @@
 import React from "react";
 import Container from "@components/core/container";
+import Link from "@components/core/link";
 
 export default function Header() {
   return (
     <header className="df-header sticky top-0 z-50 w-full border-b backdrop-blur-lg transition duration-200 ease-in-out">
       <Container>
         <div className="flex h-16 w-full items-center justify-between">
-          <span className="cursor-pointer font-family-bebas-neue text-xl font-normal">
+          <Link href={"/"} className="">
             <svg
               className="flex-shrink-0"
-              aria-label="Bento grids"
+              aria-label="codefoli.dev"
               width={156}
               height={29}
               viewBox="0 0 156 29"
@@ -258,7 +259,7 @@ export default function Header() {
                 </clipPath>
               </defs>
             </svg>
-          </span>
+          </Link>
         </div>
       </Container>
     </header>

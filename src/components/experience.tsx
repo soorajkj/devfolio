@@ -7,7 +7,24 @@ export default function Experience() {
   return (
     <section className="df-experience relative py-24">
       <Container>
-        <div className="grid gap-0">
+        <div className="flex flex-col items-center">
+          <div className="text-sm font-bold uppercase -tracking-wider">
+            Better Stack for good
+          </div>
+          <h2 className="font-helveticaDisplay mt-4 text-center text-4xl font-bold text-white">
+            Where I’ve Worked
+          </h2>
+          <p
+            className="mx-auto mt-5 text-center text-[#C9D3EE]"
+            style={{ maxWidth: "624px" }}
+          >
+            Open source plays a major part in how we build our products.
+            We&apos;re proud to give back and support the makers behind these
+            amazing projects.
+          </p>
+        </div>
+
+        <div className="mt-24 grid gap-0 pl-4">
           {_experience.reverse().map((_i, idx) => (
             <div
               key={idx}

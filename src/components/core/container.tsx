@@ -16,10 +16,4 @@ export default function Container(props: ContainerProps) {
   );
 }
 
-const ContainerStyles = cva([
-  "container",
-  "mx-auto",
-  "w-full",
-  "max-w-7xl",
-  "px-4",
-]);
+const ContainerStyles = cva(["container"]);

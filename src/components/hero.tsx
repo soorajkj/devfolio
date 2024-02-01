@@ -4,9 +4,9 @@ import Button from "./core/button";
 
 export default function Hero() {
   return (
-    <section className="df-hero relative">
+    <section className="df-hero relative pb-24 pt-24">
       <Container>
-        <div className="flex min-h-96 flex-col items-center justify-center py-12">
+        <div className="flex min-h-96 flex-col items-center justify-center">
           <div className="mb-4 text-center font-family-bebas-neue text-7xl text-white">
             I build things for the Web
           </div>
