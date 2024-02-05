@@ -1,89 +1,71 @@
 import React from "react";
 import { _experience } from "@constants/_experience";
-import Container from "@components/core/container";
-import { Icon } from "@components/core/icon";
 
 export default function Experience() {
   return (
-    <section className="df-experience relative py-24">
-      <Container>
-        <div className="flex flex-col items-center">
-          <div className="text-sm font-bold uppercase -tracking-wider">
-            Better Stack for good
-          </div>
-          <h2 className="font-helveticaDisplay mt-4 text-center text-4xl font-bold text-white">
-            Where I’ve Worked
-          </h2>
-          <p
-            className="mx-auto mt-5 text-center text-[#C9D3EE]"
-            style={{ maxWidth: "624px" }}
-          >
-            Open source plays a major part in how we build our products.
-            We&apos;re proud to give back and support the makers behind these
-            amazing projects.
-          </p>
-        </div>
-
-        <div className="mt-24 grid gap-0 pl-4">
-          {_experience.reverse().map((_i, idx) => (
+    <section className="relative py-24">
+      <div className="container">
+        <div className="grid grid-cols-12 pl-4 lg:gap-0">
+          {_experience.map((_, i) => (
             <div
-              key={idx}
-              className="df-experience__timeline grid border-l border-dashed pb-24 last:pb-0 lg:grid-cols-12 lg:gap-8"
+              key={i}
+              className="relative col-span-12 pb-12 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-px after:bg-slate-800 last:pb-0 lg:after:left-1/4"
             >
-              <div className="col-span-12 self-start lg:sticky lg:top-20 lg:col-span-4">
-                <div className="flex w-full gap-4">
-                  <div className="df-experience__icon -ml-4 inline-flex aspect-square h-8 w-8 items-center justify-center overflow-hidden rounded-md border border-dashed">
-                    <Icon icon={_i.icon} width={18} height={18} />
+              <div className="grid grid-cols-12 lg:gap-8">
+                <div className="col-span-12 flex items-start gap-4 lg:sticky lg:bottom-24 lg:top-24 lg:col-span-3 lg:flex-1 lg:flex-row-reverse lg:items-center lg:gap-0 lg:self-start">
+                  <div className="flex -translate-x-2 items-center justify-center lg:translate-x-8">
+                    <span className="inline-flex h-4 w-4 rounded-full border-2 dark:border-slate-600 dark:bg-slate-900"></span>
                   </div>
-                  <div className="flex w-full flex-1 flex-col justify-center font-medium">
-                    <p className="font-medium">
-                      {`${_i.start.toString()} - ${_i.end.toString()}`}
-                    </p>
+                  <p className="mb-4 inline-flex flex-1 text-sm leading-none text-slate-500 lg:mb-0 lg:justify-end lg:text-right dark:text-slate-400">
+                    {_.start.toString()} - {_.end.toString()}
+                  </p>
+                </div>
+                <div className="col-span-12 pl-8 lg:col-span-9 dark:border-slate-800">
+                  <div className="flex flex-col">
+                    <h3 className="mb-2 text-lg font-semibold leading-none text-slate-900 dark:text-slate-200">
+                      {_.role}
+                    </h3>
+                    <div className="space-x-2">
+                      <span className="cursor-pointer text-sky-500">
+                        {_.org}
+                      </span>
+                      <span className="dark:text-slate-400">
+                        , {_.location}
+                      </span>
+                    </div>
+                    <ul className="flex list-disc flex-col pl-6 pt-6">
+                      <li>
+                        Today’s the day — we just published the first
+                        development preview of Catalyst, our first
+                        fully-componentized, batteries-included application UI
+                        kit for React, just in time for your holiday hacking
+                        sessions.
+                      </li>
+                      <li>
+                        which includes a brand new micro style — a full set of
+                        almost three hundred 16×16 icons designed for tighter,
+                        higher density UIs.
+                      </li>
+                      <li>
+                        Today’s the day — we just published the first
+                        development preview of Catalyst, our first
+                        fully-componentized, batteries-included application UI
+                        kit for React, just in time for your holiday hacking
+                        sessions.
+                      </li>
+                      <li>
+                        which includes a brand new micro style — a full set of
+                        almost three hundred 16×16 icons designed for tighter,
+                        higher density UIs.
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-              <div className="df-experience__card col-span-8 ml-8 lg:ml-0">
-                <h4 className="df-experience__designation mb-2 text-xl font-semibold leading-tight">
-                  {_i.role}
-                </h4>
-                <h3 className="df-experience__org mb-6 font-medium">
-                  <span className="cursor-pointer no-underline underline-offset-4 hover:underline">
-                    {_i.org}
-                  </span>
-                  <span className="df-experience__divider font-normal">
-                    &nbsp;|&nbsp;
-                  </span>
-                  <span className="df-experience__location mb-6 text-base font-normal">
-                    {_i.location}
-                  </span>
-                </h3>
-                <ul className="flex list-outside list-disc flex-col gap-2 pl-4">
-                  <li>
-                    Deliver high-quality, robust production code for a diverse
-                    array of projects for clients including Harvard Business
-                    School, Everytown for Gun Safety, Pratt Institute, Koala
-                    Health, Vanderbilt University, The 19th News, and more
-                  </li>
-                  <li>
-                    Work alongside creative directors to lead the research,
-                    development, and architecture of technical solutions to
-                    fulfill business requirements
-                  </li>
-                  <li>
-                    Collaborate with designers, project managers, and other
-                    engineers to transform creative concepts into production
-                    realities for clients and stakeholders
-                  </li>
-                  <li>
-                    Provide leadership within engineering department through
-                    close collaboration, knowledge shares, and mentorship
-                  </li>
-                </ul>
               </div>
             </div>
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

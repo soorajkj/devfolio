@@ -21,7 +21,7 @@ export default function Layout(props: LayoutProps) {
       scroll-smooth
       `)}
     >
-      <body className="h-full min-h-screen w-full overflow-x-hidden font-family-montserrat text-base font-normal leading-normal antialiased">
+      <body className="h-full min-h-screen w-full overflow-x-hidden bg-white font-family-montserrat text-base font-normal leading-normal text-slate-500 antialiased dark:bg-slate-900 dark:text-slate-400">
         {children}
       </body>
     </html>

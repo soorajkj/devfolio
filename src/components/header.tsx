@@ -4,7 +4,7 @@ import Link from "@components/core/link";
 
 export default function Header() {
   return (
-    <header className="df-header sticky top-0 z-50 w-full border-b backdrop-blur-lg transition duration-200 ease-in-out">
+    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur transition duration-200 ease-in-out lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:bg-slate-900/75">
       <Container>
         <div className="flex h-16 w-full items-center justify-between">
           <Link href={"/"} className="">
