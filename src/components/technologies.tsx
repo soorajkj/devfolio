@@ -3,41 +3,16 @@
 import { Fragment } from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { tools } from "@constants/tools";
 import { Icon } from "@components/core/icon";
-import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-const techs = [
-  { icon: "", technology: "Javascript" },
-  { icon: "", technology: "HTML5" },
-  { icon: "", technology: "CSS3" },
-  { icon: "", technology: "React JS" },
-  { icon: "", technology: "Next JS" },
-  { icon: "", technology: "Tailwind CSS" },
-  { icon: "", technology: "SCSS" },
-  { icon: "", technology: "Bootstrap" },
-  { icon: "", technology: "Typescript" },
-  { icon: "", technology: "JQuery" },
-  { icon: "", technology: "Git" },
-  { icon: "", technology: "Redux" },
-  { icon: "", technology: "HTML Email" },
-  { icon: "", technology: "Node JS" },
-  { icon: "", technology: "Express JS" },
-  { icon: "", technology: "Mongo DB" },
-  { icon: "", technology: "Supabase" },
-  { icon: "", technology: "Firebase" },
-  { icon: "", technology: "Framer Motion" },
-  { icon: "", technology: "Material UI" },
-  { icon: "", technology: "Chakra UI" },
-  { icon: "", technology: "Figma" },
-  { icon: "", technology: "Styled Components" },
-];
+import "swiper/css";
 
 export default function Technologies() {
   return (
     <Fragment>
-      <div className="container">
+      <div className="space-y-4">
         <Swiper
           modules={[Autoplay]}
           loop={true}
@@ -49,11 +24,11 @@ export default function Technologies() {
             disableOnInteraction: false,
           }}
         >
-          {techs.slice(0, 13).map((_, i) => {
+          {tools.slice(0, 7).map((_, i) => {
             return (
               <SwiperSlide key={i} className="!inline-flex !w-auto">
-                <div className="inline-flex cursor-pointer items-center justify-center space-x-4 rounded-full border border-dashed px-6 py-4 opacity-70 hover:opacity-100 dark:border-gray-800 dark:bg-gray-800/10 hover:dark:border-gray-600">
-                  <Icon icon="code" />
+                <div className="group inline-flex min-w-48 cursor-pointer items-center justify-center space-x-3 rounded-lg border border-dashed px-6 py-3 font-family-roboto-mono hover:text-zinc-400 dark:border-zinc-800 dark:bg-zinc-800/5 hover:dark:border-zinc-800">
+                  <Icon icon={_.icon} width={24} height={24} />
                   <span>{_.technology}</span>
                 </div>
               </SwiperSlide>
@@ -72,11 +47,33 @@ export default function Technologies() {
             reverseDirection: true,
           }}
         >
-          {techs.slice(13).map((_, i) => {
+          {tools.slice(7, 14).map((_, i) => {
             return (
-              <SwiperSlide key={i} className="mt-4 !inline-flex !w-auto">
-                <div className="inline-flex cursor-pointer items-center justify-center space-x-4 rounded-full border border-dashed px-6 py-4 opacity-70 hover:opacity-100 dark:border-gray-800 dark:bg-gray-800/10 hover:dark:border-gray-600">
-                  <Icon icon="code" />
+              <SwiperSlide key={i} className="!inline-flex !w-auto">
+                <div className="group inline-flex min-w-48 cursor-pointer items-center justify-center space-x-3 rounded-lg border border-dashed px-6 py-3 font-family-roboto-mono hover:text-zinc-400 dark:border-zinc-800 dark:bg-zinc-800/5 hover:dark:border-zinc-800">
+                  <Icon icon={_.icon} width={24} height={24} />
+                  <span>{_.technology}</span>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          modules={[Autoplay]}
+          loop={true}
+          speed={5000}
+          spaceBetween={16}
+          slidesPerView="auto"
+          autoplay={{
+            delay: 1,
+            disableOnInteraction: false,
+          }}
+        >
+          {tools.slice(14).map((_, i) => {
+            return (
+              <SwiperSlide key={i} className="!inline-flex !w-auto">
+                <div className="group inline-flex min-w-48 cursor-pointer items-center justify-center space-x-3 rounded-lg border border-dashed px-6 py-3 font-family-roboto-mono hover:text-zinc-400 dark:border-zinc-800 dark:bg-zinc-800/5 hover:dark:border-zinc-800">
+                  <Icon icon={_.icon} width={24} height={24} />
                   <span>{_.technology}</span>
                 </div>
               </SwiperSlide>

@@ -5,10 +5,14 @@ export interface LayoutProps {
 }
 
 export interface Experience {
-  org: string;
+  organisation: string;
   location: string;
-  start: string | Date;
-  end: string | Date;
+  period: string;
   role: string;
   icon: keyof typeof icons;
+}
+
+export interface ToolNTech {
+  icon: keyof typeof icons;
+  technology: string;
 }

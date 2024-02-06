@@ -3,12 +3,12 @@ import Link from "@components/core/link";
 
 export default function Footer() {
   return (
-    <footer className="df-footer relative">
+    <footer className="relative hidden">
       <div className="container">
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-between py-8 lg:flex-row lg:items-end">
             <div className="static">
-              <p className="max-w-96 text-center font-family-roboto-mono text-sm leading-normal lg:text-left">
+              <p className="max-w-md text-center font-family-roboto-mono text-sm leading-normal lg:text-left">
                 Designed in <Link href={""}>Figma</Link> and coded in{" "}
                 <Link href={""}>Visual Studio Code</Link>. Built with{" "}
                 <Link href={""}>Next.js</Link> and{" "}
