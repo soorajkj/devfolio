@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex h-16 w-full items-center justify-between">
           <Link
             href={"/"}
-            className="flex items-center space-x-2 font-family-montserrat text-base font-semibold leading-none text-white"
+            className="flex items-center space-x-2 font-family-montserrat text-lg font-semibold leading-none text-white"
           >
             <svg
               viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ export default function Header() {
               strokeLinejoin="round"
               width={24}
               height={24}
-              className="text-indigo-500"
+              className="text-purple-500"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth={0} />
               <g
@@ -35,7 +35,7 @@ export default function Header() {
               </g>
             </svg>
 
-            <span>PORTFOLIO.DEV</span>
+            <span>codefolio</span>
           </Link>
         </div>
       </Container>

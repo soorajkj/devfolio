@@ -8,7 +8,7 @@ export default function Hero() {
       className="df-hero relative pb-24 pt-24"
       style={{
         background:
-          "radial-gradient(ellipse at top,rgba(91,99,211,0.04),transparent 60%)",
+          "radial-gradient(ellipse at top,rgba(91,99,211,0.06),transparent 60%)",
       }}
     >
       <Container>

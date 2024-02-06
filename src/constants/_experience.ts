@@ -7,7 +7,7 @@ export const _experience: Experience[] = [
     start: "Aug 2018",
     end: "Nov 2021",
     role: "Diploma in Computer Engineering",
-    icon: "code",
+    icon: "graduate",
   },
   {
     org: "Stratagile Marketing Consultancy Private Limited",
