@@ -2,11 +2,9 @@ import Technologies from "@components/technologies";
 
 export default function About() {
   return (
-    <section className="relative pb-24 pt-24">
-      <div className="container">
-        <div className="mx-auto max-w-5xl">
-          <Technologies />
-        </div>
+    <section className="cf-relative cf-pb-24 cf-pt-24">
+      <div className="cf-container">
+        <Technologies />
       </div>
     </section>
   );

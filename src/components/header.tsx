@@ -1,8 +1,8 @@
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur transition duration-200 ease-in-out lg:border-b lg:border-zinc-900/10 dark:border-zinc-50/[0.06] dark:bg-zinc-900/75">
-      <div className="container">
-        <div className="flex h-16 w-full items-center justify-between"></div>
+    <header className="cf-sticky cf-top-0 cf-z-50 cf-w-full cf-border-b cf-bg-white cf-backdrop-blur cf-transition cf-duration-200 cf-ease-in-out lg:cf-border-b lg:cf-border-zinc-950/10 dark:cf-border-zinc-50/[0.06] dark:cf-bg-zinc-950/75">
+      <div className="cf-container">
+        <div className="cf-flex cf-h-16 cf-w-full cf-items-center cf-justify-between"></div>
       </div>
     </header>
   );

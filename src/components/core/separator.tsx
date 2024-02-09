@@ -38,17 +38,17 @@ export default Separator;
 
 const SeparatorStyles = cva(
   [
-    "df-separator",
-    "relative",
-    "shrink-0",
-    "cursor-auto",
-    "pointer-events-none",
+    "cf-separator",
+    "cf-relative",
+    "cf-shrink-0",
+    "cf-cursor-auto",
+    "cf-pointer-events-none",
   ],
   {
     variants: {
       orientation: {
-        horizontal: "w-full h-px",
-        vertical: "h-full w-px",
+        horizontal: "cf-w-full cf-h-px",
+        vertical: "cf-h-full cf-w-px",
       },
     },
   }

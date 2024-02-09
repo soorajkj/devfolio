@@ -20,4 +20,4 @@ export default function Link(props: LinkProps) {
   );
 }
 
-const LinkStyles = cva(["inline-block"]);
+const LinkStyles = cva(["cf-link", "cf-inline-block"]);

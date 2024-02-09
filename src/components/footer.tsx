@@ -3,12 +3,12 @@ import Link from "@components/core/link";
 
 export default function Footer() {
   return (
-    <footer className="relative hidden">
-      <div className="container">
-        <div className="flex flex-col">
-          <div className="flex flex-col items-center justify-between py-8 lg:flex-row lg:items-end">
-            <div className="static">
-              <p className="max-w-md text-center font-family-roboto-mono text-sm leading-normal lg:text-left">
+    <footer className="hidden cf-relative">
+      <div className="cf-container">
+        <div className="cf-flex cf-flex-col">
+          <div className="cf-flex cf-flex-col cf-items-center cf-justify-between cf-py-8 lg:cf-flex-row lg:cf-items-end">
+            <div className="cf-static">
+              <p className="cf-max-w-md cf-text-center cf-font-family-roboto-mono cf-text-sm cf-leading-normal lg:cf-text-left">
                 Designed in <Link href={""}>Figma</Link> and coded in{" "}
                 <Link href={""}>Visual Studio Code</Link>. Built with{" "}
                 <Link href={""}>Next.js</Link> and{" "}
@@ -16,17 +16,17 @@ export default function Footer() {
                 <Link href={""}>Vercel</Link>.
               </p>
             </div>
-            <div className="flex items-center gap-6 whitespace-nowrap font-family-roboto-mono text-sm">
-              <Link className="-mx-1 hidden px-1 lg:block" href="">
+            <div className="cf-flex cf-items-center cf-gap-6 cf-whitespace-nowrap cf-font-family-roboto-mono cf-text-sm">
+              <Link className="-cf-mx-1 cf-hidden cf-px-1 lg:cf-block" href="">
                 +91-9946953968
               </Link>
-              <Link className="-mx-1 hidden px-1 lg:block" href="">
+              <Link className="-cf-mx-1 cf-hidden cf-px-1 lg:cf-block" href="">
                 soorajkj46@gmail.com
               </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between py-4 font-family-roboto-mono text-sm lg:flex-row">
+        <div className="cf-flex cf-flex-col cf-items-center cf-justify-between cf-py-4 cf-font-family-roboto-mono cf-text-sm lg:cf-flex-row">
           <p>© {new Date().getFullYear()} codefolio.inc</p>
         </div>
       </div>
