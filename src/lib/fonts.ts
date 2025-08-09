@@ -1,4 +1,4 @@
-import { Geist, JetBrains_Mono, Bebas_Neue } from "next/font/google";
+import { Geist, JetBrains_Mono, Instrument_Serif } from "next/font/google";
 
 export const geist = Geist({
   subsets: ["latin"],
@@ -8,7 +8,7 @@ export const geist = Geist({
   preload: true,
 });
 
-export const bebasNeue = Bebas_Neue({
+export const bebasNeue = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-family-bebas-neue",

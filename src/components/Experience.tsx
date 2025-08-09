@@ -8,8 +8,8 @@ export default function Experience() {
     <section className="relative overflow-hidden py-16">
       <Container>
         <div>
-          <div className="flex flex-col items-center gap-4 pb-24 text-center">
-            <h2 className="font-family-bebas-neue max-w-screen-sm text-4xl leading-none font-medium text-white md:text-5xl">
+          <div className="flex flex-col items-center gap-4 p-6 pb-24 text-center">
+            <h2 className="font-family-bebas-neue max-w-lg text-4xl leading-none font-medium text-white md:text-5xl">
               From learning to code to building solutions for the web
             </h2>
             <p className="w-full max-w-lg text-base">

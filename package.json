@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
+    "@vercel/og": "^0.8.5",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "framer-motion": "^12.23.12",
