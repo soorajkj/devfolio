@@ -1,9 +1,10 @@
 import React from "react";
+import { ArrowBigDownDash, LayoutGrid } from "lucide-react";
 import Container from "./core/container";
 import Link from "next/link";
 import Button from "./core/button";
-import { ArrowBigDownDash, LayoutGrid } from "lucide-react";
 import TimeComponent from "./TimeComponent";
+import OpenToWork from "./OpenToWork";
 
 export default function Hero() {
   return (
@@ -35,8 +36,8 @@ export default function Hero() {
                   </Link>
                 </Button>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-px divide-x divide-zinc-800 text-xs *:px-2 *:whitespace-nowrap">
-                <span>Open to work</span>
+              <div className="mt-2 flex flex-wrap items-center justify-center gap-1 divide-x divide-zinc-800 text-xs *:px-2 *:whitespace-nowrap">
+                <OpenToWork open={true} />
                 <TimeComponent />
               </div>
             </div>

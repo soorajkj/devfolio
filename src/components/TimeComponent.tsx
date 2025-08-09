@@ -3,7 +3,6 @@
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
-import { useIsMounted } from "usehooks-ts";
 import { useEffect, useState } from "react";
 
 dayjs.extend(utc);
@@ -15,6 +14,11 @@ export default function TimeComponent() {
   useEffect(() => {
     const tz = "Etc/GMT+12";
     setTime(dayjs().tz(tz).format("HH:mm [(UTC] Z[)]"));
+    const interval = setInterval(() => {
+      setTime(dayjs().tz(tz).format("HH:mm [(UTC] Z[)]"));
+    }, 60000);
+
+    return () => clearInterval(interval);
   }, []);
 
   if (!time) return null;
