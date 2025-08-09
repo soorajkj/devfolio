@@ -5,7 +5,7 @@ import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 import Link from "next/link";
 import Button from "./core/button";
-import { ArrowBigDownDash, LayoutGrid, StickyNote } from "lucide-react";
+import { ArrowBigDownDash, LayoutGrid } from "lucide-react";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
