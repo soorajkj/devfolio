@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Container from "./core/container";
 import dayjs from "dayjs";

@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "./core/container";
-import LinkedIn from "../../public/icons/handles/linkedin.svg";
-import Github from "../../public/icons/handles/github.svg";
-import X from "../../public/icons/handles/x.svg";
-import Instagram from "../../public/icons/handles/instagram.svg";
-import Gmail from "../../public/icons/handles/gmail.svg";
+import LinkedIn from "public/icons/handles/linkedin.svg";
+import Github from "public/icons/handles/github.svg";
+import X from "public/icons/handles/x.svg";
+import Instagram from "public/icons/handles/instagram.svg";
+import Gmail from "public/icons/handles/gmail.svg";
 import Link from "next/link";
 
 const handles = [
