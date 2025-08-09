@@ -1,19 +1,9 @@
-"use client";
-
 import React from "react";
 import Container from "./core/container";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-import timezone from "dayjs/plugin/timezone";
 import Link from "next/link";
 import Button from "./core/button";
 import { ArrowBigDownDash, LayoutGrid } from "lucide-react";
-
-dayjs.extend(utc);
-dayjs.extend(timezone);
-
-const tz = "Etc/GMT+12";
-const time = dayjs().tz(tz).format("HH:mm [(UTC] Z[)]");
+import TimeComponent from "./TimeComponent";
 
 export default function Hero() {
   return (
@@ -47,7 +37,7 @@ export default function Hero() {
               </div>
               <div className="flex flex-wrap items-center justify-center gap-px divide-x divide-zinc-800 text-xs *:px-2 *:whitespace-nowrap">
                 <span>Open to work</span>
-                <span>{time}</span>
+                <TimeComponent />
               </div>
             </div>
           </div>
