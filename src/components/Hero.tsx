@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "./core/button";
 import TimeComponent from "./TimeComponent";
 import OpenToWork from "./OpenToWork";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -13,8 +14,16 @@ export default function Hero() {
         <div className="bg-zinc-950 p-6">
           <div className="flex flex-col items-center gap-6 py-32">
             <h2 className="font-family-bebas-neue mx-auto w-full max-w-3xl text-center text-4xl leading-none text-white md:text-5xl">
-              Sooraj Janardhanan — Frontend Developer building modern,
-              responsive, and delightful web experiences.
+              Sooraj Janardhanan{" "}
+              <Image
+                src="/images/sooraj.jpg"
+                className="inline-block size-10 rounded-full border border-zinc-900 object-cover grayscale lg:size-12"
+                alt=""
+                width={56}
+                height={56}
+              />{" "}
+              — Frontend Developer building modern, responsive, and delightful
+              web experiences.
             </h2>
             <p className="mx-auto w-full max-w-xl text-center text-base">
               Frontend Developer at Picominds, specializing in crafting

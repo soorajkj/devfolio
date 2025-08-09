@@ -9,14 +9,14 @@ export default function Experience() {
       <Container>
         <div>
           <div className="flex flex-col items-center gap-4 p-6 pb-24 text-center">
-            <h2 className="font-family-bebas-neue max-w-lg text-4xl leading-none font-medium text-white md:text-5xl">
+            <h2 className="font-family-bebas-neue max-w-xl text-4xl leading-none font-medium text-white md:text-5xl">
               From learning to code to building solutions for the web
             </h2>
             <p className="w-full max-w-lg text-base">
-              From my Diploma in Computer Engineering, where I first developed a
-              passion for building and problem-solving, to stepping into the
-              professional world. This timeline highlights the key moments that
-              have shaped my career in tech.
+              Each project I’ve worked on has been an opportunity to solve
+              real-world problems and push my skills further. From dynamic web
+              applications to scalable systems, these are just a few projects
+              I’ve developed over time.
             </p>
           </div>
           {experience.map((_, i) => (

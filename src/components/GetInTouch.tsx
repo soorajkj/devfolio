@@ -59,7 +59,7 @@ export default function GetInTouch() {
                       href={_.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex size-10 items-center justify-center gap-1 border border-neutral-900 px-2"
+                      className="flex size-10 items-center justify-center gap-1 border border-zinc-900 px-2"
                     >
                       <span className="size-5 text-white">{_.icon}</span>
                     </Link>
