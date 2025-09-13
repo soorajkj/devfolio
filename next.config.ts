@@ -9,7 +9,14 @@ const nextConfig: NextConfig = {
     return config;
   },
   images: {
-    domains: ["framerusercontent.com", "media.licdn.com"],
+    remotePatterns: [
+      {
+        hostname: "framerusercontent.com",
+      },
+      {
+        hostname: "media.licdn.com",
+      },
+    ],
   },
 };
 

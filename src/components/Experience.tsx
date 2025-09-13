@@ -24,7 +24,7 @@ export default function Experience() {
               <div className="col-span-3 md:col-span-1">
                 <div className="flex flex-col items-start justify-center p-6">
                   <time className="font-family-mono text-xs text-white uppercase">
-                    {_.start_date} * {_.end_date}
+                    {_.start_date} - {_.end_date}
                   </time>
                 </div>
               </div>
