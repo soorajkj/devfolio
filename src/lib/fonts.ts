@@ -1,4 +1,14 @@
-import { Geist, JetBrains_Mono, Instrument_Serif } from "next/font/google";
+import { Geist, JetBrains_Mono, McLaren, Cabin_Sketch } from "next/font/google";
+
+// dekko
+export const sans = McLaren({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["400"],
+  display: "swap",
+  style: ["normal"],
+  preload: true,
+});
 
 export const geist = Geist({
   subsets: ["latin"],
@@ -8,7 +18,7 @@ export const geist = Geist({
   preload: true,
 });
 
-export const bebasNeue = Instrument_Serif({
+export const bebasNeue = Cabin_Sketch({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-family-bebas-neue",
@@ -26,4 +36,10 @@ export const mono = JetBrains_Mono({
 });
 
 export const fonts =
-  bebasNeue.variable + " " + geist.variable + " " + mono.variable;
+  bebasNeue.variable +
+  " " +
+  geist.variable +
+  " " +
+  mono.variable +
+  " " +
+  sans.variable;

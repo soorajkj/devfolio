@@ -1,18 +1,23 @@
-import { Fragment } from "react";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import GetInTouch from "@/components/GetInTouch";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
+import Paper from "@/components/Paper";
+import PaperAbout from "@/components/PaperAbout";
+import PaperExpericence from "@/components/PaperExpericence";
+import PaperProjects from "@/components/PaperProjects";
 
 export default function Page() {
   return (
-    <Fragment>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <GetInTouch />
-    </Fragment>
+    <div className="grid grid-cols-2 gap-px">
+      <Paper>
+        <PaperAbout />
+      </Paper>
+      <Paper>
+        <PaperExpericence />
+      </Paper>
+      {/* <Paper>
+        <PaperProjects />
+      </Paper>
+      <Paper>
+        <PaperAbout />
+      </Paper> */}
+    </div>
   );
 }

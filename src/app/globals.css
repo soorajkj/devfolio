@@ -5,4 +5,41 @@
   --font-family-geist: var(--font-family-geist);
   --font-family-bebas-neue: var(--font-family-bebas-neue);
   --font-family-mono: var(--font-family-mono);
+  --font-sans: var(--font-sans);
+}
+
+.a4 {
+  background-color: color-mix(
+    in oklch,
+    var(--color-amber-50) 100%,
+    transparent 0%
+  );
+  height: 85vh;
+}
+
+/* .a4::after {
+  border-width: 24px;
+  border-top-color: var(--color-yellow-50);
+  border-right-color: var(--color-yellow-50);
+  border-left-color: color-mix(
+    in oklch,
+    var(--color-yellow-200) 60%,
+    transparent 0%
+  );
+  border-bottom-color: color-mix(
+    in oklch,
+    var(--color-yellow-200) 60%,
+    transparent 0%
+  );
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+} */
+
+.a4__lines {
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 27px,
+    rgba(0, 0, 0, 0.2) 28px
+  );
 }

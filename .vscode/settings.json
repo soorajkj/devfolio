@@ -1,5 +1,6 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "bounded",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "css.validate": false,
