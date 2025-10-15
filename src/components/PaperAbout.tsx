@@ -3,15 +3,15 @@ import React, { Fragment } from "react";
 export default function PaperAbout() {
   return (
     <Fragment>
-      <div className="relative float-right ml-4 h-44 w-32 translate-y-12 rotate-3 bg-white p-1 pb-8 shadow-2xs">
+      <div className="relative float-right ml-4 h-44 w-32 rotate-3 bg-white p-1 pb-8 shadow-sm">
         <img
           src="/images/sooraj.jpg"
           alt="sooraj"
           className="size-full object-cover object-center grayscale"
         />
       </div>
-      <div className="prose prose-neutral prose-p:mt-7 prose-p:first:mt-0 relative max-w-full text-sm leading-7">
-        <h2>About Me</h2>
+      <div className="prose prose-neutral">
+        <h2 className="relative">About Me</h2>
         <p>
           Hello world, I&apos;m <strong> Sooraj Janardhanan </strong> , a
           passionate <strong>Software Engineer (Frontend)</strong> based in{" "}

@@ -13,7 +13,7 @@ export default function Hero() {
       <Container>
         <div className="bg-zinc-950 p-6">
           <div className="flex flex-col items-center gap-6 py-32">
-            <h2 className="font-family-bebas-neue mx-auto w-full max-w-3xl text-center text-4xl leading-none text-white md:text-5xl">
+            <h2 className="font-family-caryon mx-auto w-full max-w-3xl text-center text-4xl leading-none text-white md:text-5xl">
               Sooraj Janardhanan{" "}
               <Image
                 src="/images/sooraj.jpg"

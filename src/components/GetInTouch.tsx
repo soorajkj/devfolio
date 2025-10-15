@@ -43,7 +43,7 @@ export default function GetInTouch() {
           <div className="grid grid-cols-3 gap-px">
             <div className="col-span-3 md:col-span-2">
               <div className="flex flex-col gap-4 p-6">
-                <h2 className="font-family-bebas-neue text-4xl font-medium text-white md:text-5xl">
+                <h2 className="font-family-caryon text-4xl font-medium text-white md:text-5xl">
                   Get in touch
                 </h2>
                 <p className="text-sm">

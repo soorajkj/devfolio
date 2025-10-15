@@ -29,8 +29,8 @@ interface HighlighterProps {
 
 export function Highlighter({
   children,
-  action = "highlight",
-  color = "#c6133d",
+  action = "circle",
+  color = "#D8F999",
   strokeWidth = 1.5,
   animationDuration = 600,
   iterations = 2,
@@ -96,7 +96,7 @@ export function Highlighter({
   ]);
 
   return (
-    <span ref={elementRef} className="relative inline-block bg-transparent">
+    <span ref={elementRef} className="relative inline-flex">
       {children}
     </span>
   );

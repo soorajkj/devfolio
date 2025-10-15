@@ -2,39 +2,63 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --font-family-geist: var(--font-family-geist);
-  --font-family-bebas-neue: var(--font-family-bebas-neue);
+  --font-family-caryon: var(--font-family-caryon);
   --font-family-mono: var(--font-family-mono);
-  --font-sans: var(--font-sans);
+  --font-family-sans: var(--font-family-sans);
 }
 
-.a4 {
-  background-color: color-mix(
-    in oklch,
-    var(--color-amber-50) 100%,
-    transparent 0%
-  );
-  height: 85vh;
-}
+.prose {
+  font-size: var(--text-sm);
+  line-height: calc(var(--spacing) * 7);
 
-/* .a4::after {
-  border-width: 24px;
-  border-top-color: var(--color-yellow-50);
-  border-right-color: var(--color-yellow-50);
-  border-left-color: color-mix(
-    in oklch,
-    var(--color-yellow-200) 60%,
-    transparent 0%
-  );
-  border-bottom-color: color-mix(
-    in oklch,
-    var(--color-yellow-200) 60%,
-    transparent 0%
-  );
-  box-shadow:
-    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-} */
+  :where(p):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: calc(var(--spacing) * 7);
+  }
+
+  :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    text-decoration: none;
+  }
+
+  :where(h1):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    font-size: var(--text-7xl);
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  :where(h2):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    text-transform: uppercase;
+  }
+
+  :where(h3):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    font-size: var(--text-base);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  :where(h3 + *):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: 0;
+  }
+
+  :where(ul, ol):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: calc(var(--spacing) * 7);
+  }
+
+  :where(li):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-block: 0;
+  }
+
+  :where(.prose > ul > li > p:last-child):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  ) {
+    margin-bottom: calc(var(--spacing) * 7);
+  }
+
+  :where(ul > li):not(
+      :where([class~="not-prose"], [class~="not-prose"] *)
+    )::marker {
+    color: inherit;
+  }
+}
 
 .a4__lines {
   background-image: repeating-linear-gradient(

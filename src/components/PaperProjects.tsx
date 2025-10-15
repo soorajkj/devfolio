@@ -1,37 +1,62 @@
 import React from "react";
+import { Highlighter } from "./Highlighter";
 
 export default function PaperProjects() {
   return (
-    <section>
-      <div className="prose prose-neutral prose-h3:mt-0 prose-h3:text-base prose-ul:my-0 prose-li:my-0 prose-ul:mt-7 prose-li:marker:text-neutral-600 relative max-w-full text-base leading-7">
-        <h2>Projects</h2>
-        <p>
-          Each project I've worked on has been an opportunity to solve
-          real-world problems and push my skills further. These are just a few
-          projects I've developed over time.
-        </p>
-        <ul className="list-decimal">
+    <section className="size-full">
+      <div className="prose prose-neutral">
+        <h2 className="relative">
+          <Highlighter>Projects</Highlighter>
+        </h2>
+        <ul className="list-disc pl-0">
           <li>
-            <h3>Catalix UI - Design system, CLI</h3>
+            <h3>Chromic UI</h3>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm.
+              A reusable <strong>component library</strong> and a{" "}
+              <strong>CLI</strong> for <strong>React</strong>, designed to
+              streamline <strong>UI development</strong>. Built with{" "}
+              <strong>Tailwind CSS</strong>, the library provides a wide range
+              of <strong>accessible</strong> and{" "}
+              <strong>composable components</strong> including{" "}
+              <strong>buttons, forms, cards, modals</strong>, and more. Tech
+              used{" "}
+              <strong>
+                {[
+                  "Next.js",
+                  "React.js",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "TSDown",
+                  "Monorepo",
+                  "Turborep",
+                  "Pnpm",
+                ].join(", ")}
+              </strong>
             </p>
           </li>
           <li>
-            <h3>Taptree - Link in bio</h3>
+            <h3>Taptree</h3>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm.
-            </p>
-          </li>
-          <li>
-            <h3>Halcyon - VSCode Theme</h3>
-            <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more.
+              A <strong>link-in-bio management platform</strong>, similar to
+              Linktree, enabling users to{" "}
+              <strong>
+                centralize and customize all social and content links
+              </strong>
+              . Implemented{" "}
+              <strong>responsive, themeable pages with analytics</strong> to
+              track engagement, improving digital presence management for
+              creators and businesses. Technoglogies used{" "}
+              <strong className="text-sm">
+                {[
+                  "Next.js",
+                  "React.js",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "Hono.js",
+                  "PrismaORM",
+                  "Postgres",
+                ].join(", ")}
+              </strong>
             </p>
           </li>
         </ul>

@@ -10,7 +10,7 @@ export const metadata: Metadata = seo;
 export default function Layout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={fonts} suppressHydrationWarning={true}>
-      <body className="font-family-geist h-full min-h-screen w-full bg-white text-base leading-normal font-normal text-neutral-600 not-italic antialiased">
+      <body className="font-family-sans h-full min-h-screen w-full bg-neutral-50 text-base leading-normal font-normal text-neutral-600 not-italic antialiased">
         <ThemeProvider
           enableSystem
           disableTransitionOnChange

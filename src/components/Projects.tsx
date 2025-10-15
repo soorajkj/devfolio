@@ -8,7 +8,7 @@ export default function Projects() {
       <Container>
         <div>
           <div className="flex flex-col items-center gap-4 p-6 pb-24 text-center">
-            <h2 className="font-family-bebas-neue max-w-xl text-4xl leading-none font-medium text-white md:text-5xl">
+            <h2 className="font-family-caryon max-w-xl text-4xl leading-none font-medium text-white md:text-5xl">
               Here are some of the things that I&apos;ve built during my journey
             </h2>
             <p className="w-full max-w-lg text-base">
