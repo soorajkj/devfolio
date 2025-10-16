@@ -12,16 +12,19 @@ export default function Projects() {
               Here are some of the things that I&apos;ve built during my journey
             </h2>
             <p className="w-full max-w-lg text-base">
-              From my Diploma in Computer Engineering, where I first developed a
-              passion for building and problem-solving, to stepping into the
-              professional world. This timeline highlights the key moments that
-              have shaped my career in tech.
+              Each project I’ve worked on has been an opportunity to solve
+              real-world problems and push my skills further. From dynamic web
+              applications to scalable systems, these are just a few projects
+              I’ve developed over time.
             </p>
           </div>
-          <div className="grid gap-8 p-6 pb-12 sm:grid-cols-2 lg:grid-cols-3">
-            <Project className="-translate-y-2 rotate-2" />
-            <Project className="-rotate-2" />
-            <Project className="translate-y-2 rotate-3" />
+          <div className="grid gap-4 p-2 sm:grid-cols-2 lg:grid-cols-3">
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
           </div>
         </div>
       </Container>

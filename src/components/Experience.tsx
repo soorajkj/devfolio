@@ -13,10 +13,10 @@ export default function Experience() {
               From learning to code to building solutions for the web
             </h2>
             <p className="w-full max-w-lg text-base">
-              Each project I’ve worked on has been an opportunity to solve
-              real-world problems and push my skills further. From dynamic web
-              applications to scalable systems, these are just a few projects
-              I’ve developed over time.
+              From my Diploma in Computer Engineering, where I first developed a
+              passion for building and problem-solving, to stepping into the
+              professional world. This timeline highlights the key moments that
+              have shaped my career in tech.
             </p>
           </div>
           {experience.map((_, i) => (

@@ -1,9 +1,11 @@
 import React from "react";
+import Photograph from "./Photograph";
 
 export default function Readme() {
   return (
     <div className="mx-auto flex max-w-xl flex-1 flex-col items-center justify-center md:rotate-2">
       <div className="relative w-full border border-zinc-900 bg-zinc-900/80 px-8 py-16 before:absolute before:-top-px before:-right-px before:z-10 before:size-0 before:border-[24px] before:border-zinc-900 before:border-t-zinc-950 before:border-r-zinc-950 md:px-12 md:py-24">
+        <Photograph />
         <div className="prose prose-zinc dark:prose-invert dark:prose-p:text-zinc-400 prose-strong:font-medium">
           <p>
             Hi, I’m <strong>Sooraj Janardhanan</strong>, a passionate{" "}

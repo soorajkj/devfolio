@@ -16,13 +16,10 @@ export default function Project({ className }: ProjectProps) {
           more. Available on Visual Studio Marketplace, Package Control, Atom
           Package Manager, and npm.
         </p>
-        <div className="mt-4 flex flex-wrap items-center gap-1">
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
           {["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"].map(
             (_, i) => (
-              <span
-                key={i}
-                className="font-family-mono px-1 text-xs text-nowrap"
-              >
+              <span key={i} className="font-family-mono text-xs text-nowrap">
                 {_}
               </span>
             )
